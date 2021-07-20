@@ -176,3 +176,26 @@ table{
    margin: 0 auto;
    width: 500px;
   }
+
+  div#seasons table{
+    border-collapse: collapse;
+  }
+  
+  div#seasons th{
+      padding: 10px;
+      color: black;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      background-color: rgba(211, 211, 211, 0.381);
+  }
+  div#seasons td{
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  div#titulo h4{
+      color: white;
+    background-image: linear-gradient(to left,var(--cor2),var(--cor4) );
+  }
