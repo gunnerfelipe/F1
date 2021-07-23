@@ -164,7 +164,7 @@ table{
   th, td {
     font-size: 17px;
     border-bottom: 1px solid #ddd;
-    text-align: left;
+    text-align: center;
     padding: 5px;
   }
   th{
@@ -172,8 +172,26 @@ table{
     color: white;
     padding-left: 2px;
   }
+  th > a{
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+  th > a:hover{
+    background-color: lightgrey;
+    color: var(--cor5);
+    }
   table td:hover {
       background-color: #f5f5f567;
+    }
+    td.libelle{
+        text-align: left;
+    }
+    td.total{
+        text-align: center;
+        font-weight: bold;
+    }
+    td.tiltre{
+        font-weight: bold;
     }
   iframe{
    
