@@ -79,6 +79,10 @@ main strong{
     padding: 2px;
 
 }
+img{
+    border-radius: 12px;
+    
+}
 h1{
     font-family: Formula1;
     color: #f39209;
@@ -146,6 +150,8 @@ footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.6em;
     font-weight: bold;
+    clear: both;
+    border-top: 1px solid #888888;
 }
 ol{
     padding: 0px 30px 0px 45px;
