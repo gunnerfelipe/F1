@@ -123,6 +123,20 @@ img{
     display: block;
     margin: auto;;
 }
+aside{
+    background-color: lightgray;
+    border-radius: 15px;
+}
+aside > h2{
+    padding: 5px;
+    background-color: var(--cor2);
+    margin: 10px 0px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > h4{
+    padding: 10px 0px 5px 65px;
+
+}
 footer{
     background-color: #73513D;
     color: white;
@@ -130,7 +144,7 @@ footer{
     padding: 5px;
     margin: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 0.6em;
     font-weight: bold;
 }
 ol{
