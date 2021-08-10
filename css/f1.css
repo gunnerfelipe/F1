@@ -256,7 +256,7 @@ table{
       color: white;
     background-image: linear-gradient(to left,var(--cor2),var(--cor4) );
   }
-  aside#lateral{
+ aside#lateral{
     display: block;
     width: 410px;
     float: right;
