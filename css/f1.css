@@ -80,7 +80,7 @@ main strong{
 
 }
 img{
-    border-radius: 12px;
+    border-radius: 0px;
     
 }
 h1{
@@ -303,5 +303,7 @@ aside#left h2{
     font-size: 11pt;
     color: white;
     padding: 5pt;
-
+}
+figure.foto-legenda{
+    position: relative;
 }
