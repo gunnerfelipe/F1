@@ -183,6 +183,7 @@ table{
     border-collapse: collapse;
     border: 1px;
   }
+
   
   th, td {
     font-size: 17px;
@@ -191,7 +192,7 @@ table{
     padding: 5px;
   }
   th{
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.705);
     color: white;
     padding-left: 2px;
   }
@@ -226,7 +227,20 @@ table{
         background-color: lightgrey;
         color: var(--cor5);
         }
+    th.titulo{
+        background-color: grey;
+        border-radius: 15px;
+            padding: 5px;
+            margin: 10px 0px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    aside > h4{
+        padding: 10px 0px 5px 65px;
 
+          }
+tr.odd{
+    background-color: rgba(211, 211, 211, 0.171);
+}
   iframe{
    
    display: block;
