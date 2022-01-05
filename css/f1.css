@@ -263,6 +263,7 @@ tr.odd{
    width: 500px;
   }
 
+
   div#seasons table{
     border-collapse: collapse;
   }
@@ -285,9 +286,10 @@ tr.odd{
       color: white;
     background-image: linear-gradient(to left,var(--cor2),var(--cor4) );
   }
+
  aside#lateral{
     display: block;
-    width: 410px;
+    width: 100px;
     float: right;
     background-color: #dddddd;
     padding: 10pt;
@@ -306,6 +308,12 @@ aside#lateral h2{
     background-color: #606060;
     font-size: 11pt;
     color: white;
+    padding: 5pt;
+}
+aside#lateral p{
+    font-size: 15pt;
+    text-align: right  ;
+    color: black;
     padding: 5pt;
 
 }
