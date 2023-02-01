@@ -392,3 +392,28 @@ figure.foto-legenda{
     box-shadow: 0 0 0 2px #fff, 0 0 0 4px #333;
 }
 
+.btn {
+    width: 160px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 40px; /* Espaçamento interno */
+    color: rgb(2, 112, 2); /* Cor da fonte */
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+.btn-voltar {
+    float: left;
+    
+  }
+  
+  .btn-proximo {
+    float: right;
+
+    }
+    .btn-voltar:hover,
+.btn-proximo:hover {
+  background-color: lightgrey; /* Mudar cor de fundo quando o mouse passar por cima */
+  box-shadow: 0 4px 8px 0 green (0,0,0,0.2); /* Adicionar sombra */
+}
