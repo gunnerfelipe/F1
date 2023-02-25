@@ -454,3 +454,19 @@ figure.foto-legenda{
 }
 
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .col1 {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .col2 {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
