@@ -3,6 +3,10 @@
     font-family: 'Formula1';
     src: url(../fonts/Formula1-Regular_web_0.ttf) format('opentype');
 }
+@font-face {
+    font-family: 'Product Sans';
+    src: url('caminho/para/ProdutoSans-Regular.ttf') format('truetype');
+}
 
 :root{
     --cor0: #F1D8C9;
@@ -29,7 +33,7 @@ body{
 header{
     background-image:  linear-gradient(to bottom, #73513da6, var(--cor4), var(--cor4));
     min-height: 100px;
-    padding: 10px;
+    padding: 10px 1px;
     text-align: center;
 
 }
@@ -397,7 +401,7 @@ figure.foto-legenda{
     margin: 0 10px;
     border: none;
     border-radius: 10px;
-    padding: 12px 40px; /* Espaçamento interno */
+    padding: 10px 10px; /* Espaçamento interno */
     color: rgb(2, 112, 2); /* Cor da fonte */
     font-size: 16px;
     cursor: pointer;
@@ -405,11 +409,13 @@ figure.foto-legenda{
   
 .btn-voltar {
     float: left;
+    font-size: 20px;
     
   }
   
   .btn-proximo {
     float: right;
+    font-size: 20px;
 
     }
     .btn-voltar:hover,
@@ -417,3 +423,50 @@ figure.foto-legenda{
   background-color: lightgrey; /* Mudar cor de fundo quando o mouse passar por cima */
   box-shadow: 0 4px 8px 0 green (0,0,0,0.2); /* Adicionar sombra */
 }
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1vw;
+    padding: 20 2vw;
+}
+
+.gallery-items{
+    width: 200px;
+    height: 140px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 2;
+    transition: transform .2s linear;
+    cursor: pointer;
+    
+}
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-items:hover{
+    transform: scale(1.5);
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .col1 {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .col2 {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
