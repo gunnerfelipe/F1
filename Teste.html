@@ -1,448 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        <meta charset="UTF-8"/>
+        <title>F1</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/f1.css">
+
 </head>
 <body>
+    <header>
+        <h1>OS GRANDES PRÊMIOS DA FORMULA 1</h1>
+        <p style="text-align: center;">Da largada à bandeirada: tudo sobre a F1 em um só lugar</p>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="seasons.html">TEMPORADAS</a>
+        <a href="races.html">CORRIDAS</a>
+        <a href="drivers.html">PILOTOS</a>
+        <a href="teams.html">EQUIPES</a>
+        <a href="circuits.html">CIRCUITOS</a>
+        <a href="interviews.html">ENTREVISTAS</a>
+        <a href="fale.html">FALE CONOSCO</a>
+    </nav>
+    </header>
+<body>
+  <h1>Conversor de Pontos da IndyCar</h1>
+  <p>Insira as posições de um piloto e veja quantos pontos ele teria no sistema de 1994.</p>
+  <input id="posicoes" type="text" placeholder="Ex: 1,2,1,4,2,3,5,2,1,3,6,4,5">
+  <button id="calcular" onclick="calcularPontos()">Calcular</button>
+  <p id="resultado"></p>
+  <script>
+    // Seu código Javascript aqui
+    var pontos = [20, 16, 14, 12, 10, 8, 6, 4, 3, 2, 1];
 
-    <script>
-        // Selecione todas as divs com a classe "item"
-const items = document.querySelectorAll(".item");
+    function calcularPontos() {
+      var posicoes = document.getElementById("posicoes").value.split(",");
+      var total = 0;
+      for (var i = 0; i < posicoes.length; i++) {
+        var posicao = parseInt(posicoes[i]);
+        if (posicao > 0 && posicao <= pontos.length) {
+          total += pontos[posicao - 1];
+        }
+      }
+      document.getElementById("resultado").innerHTML = "O piloto tem " + total + " pontos";
+    }
+  </script>
+</body>
+</html>
 
-// Para cada div de item, remova a div de imagem e mantenha apenas o link
-items.forEach((item) => {
-  const link = item.querySelector("a"); // Selecione o link dentro da div
-  const img = item.querySelector("div"); // Selecione a div de imagem dentro da div
-
-  item.removeChild(img); // Remova a div de imagem da div de item
-  item.innerHTML = link.outerHTML; // Substitua o conteúdo da div de item com o HTML do link
-});
-
-    </script>
-    <div class="margin-fix" id="list_members_friends_items">
-        <div class="item ">
-<a href="https://www.camwhores.tv/members/5488494/" title="goku0">
-<div class="img">
-                <img class="thumb lazy-load" src="https://cdn.camwhores.tv/contents/avatars/5488000/5488494.jpg" alt="goku0" title="goku0" style="display: block;">
-                                        </div>
-<strong class="title">
-                goku0
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>12 hours ago</em></div>
-                <div class="views">4 444</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/2323872/" title="MonkeyButt69">
-<div class="img">
-                <img class="thumb lazy-load" src="https://cdn.camwhores.tv/contents/avatars/2323000/2323872.jpg" alt="MonkeyButt69" title="MonkeyButt69" style="display: block;">
-                                        </div>
-<strong class="title">
-                MonkeyButt69
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>3 days ago</em></div>
-                <div class="views">40 340</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/11352781/" title="Thomasstyle0217">
-<div class="img">
-                <span class="no-thumb">no photo</span>
-                                        </div>
-<strong class="title">
-                Thomasstyle0217
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>3 days ago</em></div>
-                <div class="views">195</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/2760678/" title="ahhhhhhk">
-<div class="img">
-                <img class="thumb lazy-load" src="https://cdn.camwhores.tv/contents/avatars/2760000/2760678.png" alt="ahhhhhhk" title="ahhhhhhk" style="display: block;">
-                                        </div>
-<strong class="title">
-                ahhhhhhk
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>3 days ago</em></div>
-                <div class="views">18 909</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/9296962/" title="AridAJ">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/9296000/9296962.png" alt="AridAJ" title="AridAJ">
-                                        </div>
-<strong class="title">
-                AridAJ
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>3 days ago</em></div>
-                <div class="views">1 966</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/8780084/" title="slappy27xx">
-<div class="img">
-                <img class="thumb lazy-load" src="https://cdn.camwhores.tv/contents/avatars/8780000/8780084.jpg" alt="slappy27xx" title="slappy27xx" style="display: block;">
-                                        </div>
-<strong class="title">
-                slappy27xx
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>4 days ago</em></div>
-                <div class="views">5 850</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/9989051/" title="DisplayName(*)">
-<div class="img">
-                <img class="thumb lazy-load" src="https://cdn.camwhores.tv/contents/avatars/9989000/9989051.png" alt="DisplayName(*)" title="DisplayName(*)" style="display: block;">
-                                        </div>
-<strong class="title">
-                DisplayName(*)
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>6 days ago</em></div>
-                <div class="views">50 324</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/6735971/" title="cheeto831">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/6735000/6735971.jpg" alt="cheeto831" title="cheeto831">
-                                        </div>
-<strong class="title">
-                cheeto831
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">1 456</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/5070094/" title="letans">
-<div class="img">
-                <img class="thumb lazy-load" src="https://cdn.camwhores.tv/contents/avatars/5070000/5070094.jpg" alt="letans" title="letans" style="display: block;">
-                                        </div>
-<strong class="title">
-                letans
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">1 550</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/7561405/" title="manggalaadipati">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/7561000/7561405.jpg" alt="manggalaadipati" title="manggalaadipati">
-                                        </div>
-<strong class="title">
-                manggalaadipati
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">1 178</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/8356679/" title="star22lord">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/8356000/8356679.jpg" alt="star22lord" title="star22lord">
-                                        </div>
-<strong class="title">
-                star22lord
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">4 064</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/10388375/" title="kot.1900v">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/10388000/10388375.jpeg" alt="kot.1900v" title="kot.1900v">
-                                        </div>
-<strong class="title">
-                kot.1900v
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">8 155</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/6518986/" title="Maurice Chevalier">
-<div class="img">
-                <img class="thumb lazy-load" src="https://cdn.camwhores.tv/contents/avatars/6518000/6518986.jpg" alt="Maurice Chevalier" title="Maurice Chevalier" style="display: block;">
-                                        </div>
-<strong class="title">
-                Maurice Chevalier
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">9 174</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/26918/" title="alicandan1980">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/26000/26918.png" alt="alicandan1980" title="alicandan1980">
-                                        </div>
-<strong class="title">
-                alicandan1980
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">1 268</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/2819494/" title="ffk5">
-<div class="img">
-                <img class="thumb lazy-load" src="https://cdn.camwhores.tv/contents/avatars/2819000/2819494.jpg" alt="ffk5" title="ffk5" style="display: block;">
-                                        </div>
-<strong class="title">
-                ffk5
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">1 567</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/6727207/" title="Aransul1986">
-<div class="img">
-                <span class="no-thumb">no photo</span>
-                                        </div>
-<strong class="title">
-                Aransul1986
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">2 267</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/8686220/" title="Royarinn">
-<div class="img">
-                <span class="no-thumb">no photo</span>
-                                        </div>
-<strong class="title">
-                Royarinn
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">2 931</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/249627/" title="apollonapollon">
-<div class="img">
-                <img class="thumb lazy-load" src="https://cdn.camwhores.tv/contents/avatars/249000/249627.jpg" alt="apollonapollon" title="apollonapollon" style="display: block;">
-                                        </div>
-<strong class="title">
-                apollonapollon
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">10 816</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/368660/" title="nickcar">
-<div class="img">
-                <span class="no-thumb">no photo</span>
-                                        </div>
-<strong class="title">
-                nickcar
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">2 035</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/5577590/" title="vkar5">
-<div class="img">
-                <span class="no-thumb">no photo</span>
-                                        </div>
-<strong class="title">
-                vkar5
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">6 456</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/7003985/" title="Gamma2b3">
-<div class="img">
-                <span class="no-thumb">no photo</span>
-                                        </div>
-<strong class="title">
-                Gamma2b3
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">16 489</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/5986819/" title="haraldmity">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/5986000/5986819.png" alt="haraldmity" title="haraldmity">
-                                        </div>
-<stron  g class="title">
-                haraldmity
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">18 730</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/12091501/" title="Generalizzi">
-<div class="img">
-                <span class="no-thumb">no photo</span>
-                                        </div>
-<strong class="title">
-                Generalizzi
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>1 week ago</em></div>
-                <div class="views">1 187</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/237086/" title="tabularassa">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/237000/237086.jpg" alt="tabularassa" title="tabularassa">
-                                        </div>
-<strong class="title">
-                tabularassa
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>2 weeks ago</em></div>
-                <div class="views">1 491</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/110532/" title="Barto_88">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/110000/110532.jpg" alt="Barto_88" title="Barto_88">
-                                        </div>
-<strong class="title">
-                Barto_88
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>2 weeks ago</em></div>
-                <div class="views">2 797</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/833117/" title="el_beau">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/833000/833117.png" alt="el_beau" title="el_beau">
-                                        </div>
-<strong class="title">
-                el_beau
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>2 weeks ago</em></div>
-                <div class="views">119 608</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/8325571/" title="Uniscoint">
-<div class="img">
-                <span class="no-thumb">no photo</span>
-                                        </div>
-<strong class="title">
-                Uniscoint
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>2 weeks ago</em></div>
-                <div class="views">4 190</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/3561810/" title="easygoing61">
-<div class="img">
-                <span class="no-thumb">no photo</span>
-                                        </div>
-<strong class="title">
-                easygoing61
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>2 weeks ago</em></div>
-                <div class="views">1 428</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/1700218/" title="aarsvocht">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/1700000/1700218.jpg" alt="aarsvocht" title="aarsvocht">
-                                        </div>
-<strong class="title">
-                aarsvocht
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>2 weeks ago</em></div>
-                <div class="views">8 947</div>
-        </div>
-</a>
-</div>
-<div class="item ">
-<a href="https://www.camwhores.tv/members/7574730/" title="Robert456zxc">
-<div class="img">
-                <img class="thumb lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://cdn.camwhores.tv/contents/avatars/7574000/7574730.png" alt="Robert456zxc" title="Robert456zxc">
-                                        </div>
-<strong class="title">
-                Robert456zxc
-        </strong>
-<div class="wrap">
-                                                                                                                                                <div class="added"><em>2 weeks ago</em></div>
-                <div class="views">6 364</div>
-        </div>
-</a>
-</div>
-</div>
 </body>
 </html>
